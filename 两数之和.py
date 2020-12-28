@@ -27,3 +27,10 @@ class Solution:
                     continue
             if (target - i) in nums and (target - i) != i:
                 return [nums.index(i), nums.index(target-i)]
+
+if __name__ == "__main__":
+    solution = Solution()
+    nums = [2, 7, 11, 15]
+    target = 9
+    print(solution.twoSum(nums, target))
+
